@@ -1,36 +1,40 @@
+
+* Trainer for linear ODEs with constant coefficients* German
+
+
  ******************************************************************************
  *                                                                            *
- * Übungssystem: Lineare Differentialgleichungen mit konstanten Koeffizienten *
+ * Ãœbungssystem: Lineare Differentialgleichungen mit konstanten Koeffizienten *
  *                                                                            *
  * von Stefan Trost                                                           *
  *                                                                            *
  ******************************************************************************
 
 
- Das Übungssystem besteht aus den folgenden Komponenten:
+ Das Ãœbungssystem besteht aus den folgenden Komponenten:
 
- - Aufgabengenerator.py  --> erzeugt die DGLen; läuft auf Server; benutzt SymPy
+ - Aufgabengenerator.py  --> erzeugt die DGLen; lÃ¤uft auf Server; benutzt SymPy
 
  - AGTestClass.py        --> Testet Aufgabengenerator.py
 
- - aufgabengenerator.js  --> ist zuständig für die Darstellung der Antwort von 
+ - aufgabengenerator.js  --> ist zustÃ¤ndig fÃ¼r die Darstellung der Antwort von 
  			     Aufgabengenerator.py im Browser
 
- - korrektur-feedback.js --> Korrekturmodul und Feedbackmodul: überprüft 
+ - korrektur-feedback.js --> Korrekturmodul und Feedbackmodul: Ã¼berprÃ¼ft 
 			     Eingaben auf Korrektheit und erzeugt Feedback an 
 			     Benutzer
 
- - test-keineFehler.js   --> Testet Korrekturmodul; Testfälle beinhalten keinen 
+ - test-keineFehler.js   --> Testet Korrekturmodul; TestfÃ¤lle beinhalten keinen 
 			     Fehler
 
  - test-mitFehler.js     --> Testet Korrekturmodul und Feedbackmodul; 
-			     Testfälle beinhalten Fehler
+			     TestfÃ¤lle beinhalten Fehler
 
- - uebungssystem.html    --> Benutzerschnittstelle des Übungssystems: stellt 
-			     Aufgaben dar, ermöglicht Eingabe der Antworten 
+ - uebungssystem.html    --> Benutzerschnittstelle des Ãœbungssystems: stellt 
+			     Aufgaben dar, ermÃ¶glicht Eingabe der Antworten 
 			     und zeigt Feedback an.
  
- - test.html             --> Benutzerschnittstelle des Tests des Übungssystems
+ - test.html             --> Benutzerschnittstelle des Tests des Ãœbungssystems
 
  - style.css             --> legt Aussehen von uebungssystem.html fest
 
@@ -40,7 +44,7 @@
  Betrieb
  -------
 
- Zum Betrieb des Übungssystems wird ein Webserver benötigt, auf dem der 
+ Zum Betrieb des Ãœbungssystems wird ein Webserver benÃ¶tigt, auf dem der 
  Aufgabengenerator laufen kann. Der Server muss einen Python Interpreter
  installiert haben und SymPy (ab Version 0.7.4.1).
 
@@ -52,13 +56,13 @@
  
  In der Datei aufgabengenerator.js muss der URL zur
  Aufgabengenerator.py Datei auf dem Webserver in der Funktion *pageLoad()* in
- der Zeile die mit *$.getJSON* anfängt angepasst werden. Der URL muss aber 
+ der Zeile die mit *$.getJSON* anfÃ¤ngt angepasst werden. Der URL muss aber 
  immer von *?callback=?* gefolgt sein.
 
- Die HTML, CSS und JS Dateien werden in den Ordner für Webdateien gelegt (z.B. 
+ Die HTML, CSS und JS Dateien werden in den Ordner fÃ¼r Webdateien gelegt (z.B. 
  htdocs).
 
- Nun ist das Übungssystem einsatzbereit und kann über die uebungssystem.html
- Datei geöffnet werden. Über test.html kann die Testauswertung aufgerufen 
+ Nun ist das Ãœbungssystem einsatzbereit und kann Ã¼ber die uebungssystem.html
+ Datei geÃ¶ffnet werden. Ãœber test.html kann die Testauswertung aufgerufen 
  werden.
 

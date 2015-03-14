@@ -1,12 +1,18 @@
-
-* Trainer for linear ODEs with constant coefficients* German
+****************************************************************
+*                                                              *
+* Trainer for linear ODEs with constant coefficients* German   *
+*                                                              *
+* Part of my masters thesis at FernUniversitaet Hagen, Germany *
+*                                                              *
+* Translation in coming soon                                   *
+****************************************************************
 
 
  ******************************************************************************
  *                                                                            *
  * Übungssystem: Lineare Differentialgleichungen mit konstanten Koeffizienten *
  *                                                                            *
- * von Stefan Trost                                                           *
+ * Teil meiner Masterthesis an der FernUniversität in Hagen                   *
  *                                                                            *
  ******************************************************************************
 

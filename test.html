@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>QUnit - Test of file regex.js</title>
+	<meta charset="utf-8">
+	<link type="text/css" rel="stylesheet" href="http://code.jquery.com/qunit/qunit-1.14.0.css">
+	<script src="//code.jquery.com/jquery-1.10.2.min.js"></script>
+	<script src="//code.jquery.com/qunit/qunit-1.14.0.js"></script>
+</head>
+<body>
+	<div id="qunit"></div>
+
+	
+	<p id="Aufgabe">
+	</p>
+	<button id="loesungButton" onclick="loesungZeigen()">Lösung anzeigen</button>
+
+	<p id="Antwort">
+	</p>
+
+	<button onclick="neueAufgabe(ag)">Neue Aufgabe</button>
+
+	<p id="reg">
+		y = <input type="text" id="eingabe" size="50">
+		<button onclick="run(ag.getSolutionLeft(), ag.getSolutionRight(), new Korrekturmodul(new Feedbackmodul))">Abschicken</button>
+		
+		<span id="feedback">
+		</span>
+	</p>
+	<script src="aufgabengenerator.js"></script>
+	<script src="korrektur-feedback.js"></script>
+	<script src="test_keineFehler.js"></script>
+	<script src="test_mitFehler.js"></script>
+	
+</body>
+</html>
